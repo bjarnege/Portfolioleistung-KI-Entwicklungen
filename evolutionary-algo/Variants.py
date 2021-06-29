@@ -50,7 +50,7 @@ class ProcessAllVariants:
         df_evaluations["Kriterien"] = "Selektionkriterium: " + df_evaluations["select_type"] +\
                         " Paarungskriterium: "+df_evaluations["pairing_type"] +\
                         " Crossover-Kriterium: "+df_evaluations["crossover_type"]
-
+        self.df_evaluations = df_evaluations
         data = [dict(
           type = 'line',
           x = df_evaluations["Iteration"],
